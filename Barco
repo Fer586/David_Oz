@@ -1,0 +1,7 @@
+Algoritmo sin_titulo
+	
+	escribir  "----|-|--|-|--|-|--|-|--|-|--|-|--/"
+	escribir   "\                                /"
+	escribir    "\  []  []  []  []  []  []  []  /"
+	escribir     "\____________________________/ "	
+FinAlgoritmo
