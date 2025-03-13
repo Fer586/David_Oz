@@ -1,0 +1,16 @@
+Algoritmo Vectores
+	definir n,i como entero
+	definir numero Como Real
+	Dimension numero[5]
+	
+	Escribir " Ingrese los numeros a elevar "
+	leer n
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir " Ingresen los numeros a elevar "
+		leer numero[i]
+	Fin Para
+	
+	escribir "Los numeros ingresados elevados son "
+	Para i<-1 Hasta n Con Paso 1 Hacer
+		Escribir numero[i]  " Elevado al cuadrado es : " , numero[i] ^ 2
+	FinPara
