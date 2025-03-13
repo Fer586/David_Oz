@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	
+	definir precios Como Entero
+	
+		Escribir "Ingrese la cantidad de productos:"
+		Leer n
+		Dimension precios[100]
+		
+		Para i desde 1 Hasta n hacer 
+			Escribir "Ingrese el precio del producto ", i, ":"
+			Leer precios[i]
+			Si precios[i] >= 0 Entonces
+				costoTotal <- costoTotal + precios[i]
+			Sino
+				Escribir "Error: El precio no puede ser negativo. Se considerará 0 para el producto ", i, "."
+				costoTotal <- costoTotal + 0
+			FinSi
+		FinPara
+FinAlgoritmo
