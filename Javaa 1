@@ -1,0 +1,75 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int n1=0,n2=0,opcion=0;
+	    double res=0;
+	    
+	    Scanner sc= new Scanner(System.in);
+        System.out.println("Bienvenido");
+        System.out.println("1-suma");
+        System.out.println("2-resta");
+        System.out.println("3-multiplicacion");
+        System.out.println("4-division");
+        System.out.println("5-salir");
+        System.out.println("digite la opcion a realizar:");
+        opcion=sc.nextInt();
+         
+        while (true)
+            
+         if (opcion == 5)
+         {
+             break;
+         }
+         
+        if(opcion == 1)
+         {
+          System.out.print("Digite el primer numero : ");
+          n1=sc.nextInt();
+          System.out.print("Digite el segundo numero : ");
+          n2=sc.nextInt();
+          res = n1 + n2;
+          
+          System.out.print("El resultado de la suma es: "+res);
+         }
+         
+         if(opcion == 2)
+         {
+          System.out.print("Digite el primer numero : ");
+          n1=sc.nextInt();
+          System.out.print("Digite el segundo numero : ");
+          n2=sc.nextInt();
+          res = n1 - n2;
+          
+          System.out.print("El resultado de la resta es: " + res);
+         }
+         
+         if(opcion == 3)
+         {
+          System.out.print("Digite el primer numero : ");
+          n1=sc.nextInt();
+          System.out.print("Digite el segundo numero : ");
+          n2=sc.nextInt();
+          res = n1 * n2;
+          
+          System.out.print("El resultado de la multiplicacion es: " + res);
+          
+         }
+         
+         if(opcion == 4)
+         {
+             System.out.print("Digite el primer numero : ");
+             n1=sc.nextInt();
+             System.out.print("Digite el segundo numero : ");
+             n2=sc.nextInt();
+             res = n1 / n2;
+             
+             System.out.print("El resultado de la division es: " + res);
+         }
+         
+    
+	}
+
+}
+ 
