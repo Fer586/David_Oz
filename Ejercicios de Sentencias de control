@@ -1,0 +1,8 @@
+num = input (" Ingrese un numero : ")
+num = (abs(float(num)))
+print (num)
+
+
+pesos = input (" Ingrese la cantidad de dinero : ")
+dolar = float(pesos)/4227.32
+print(dolar)
