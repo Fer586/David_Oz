@@ -1,0 +1,10 @@
+import math
+nh =  input(" Ingrese la cantidad de hombres : ")
+nm =  input ( " Ingrese la cantidad de mujeres : ")
+
+ta = int(nh) + int(nm)
+ph = int(nh) *100/int(ta) 
+pm = int(nm) *100/int(ta) 
+
+print (ph)
+print (pm)
