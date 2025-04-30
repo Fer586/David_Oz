@@ -1,0 +1,16 @@
+import math
+
+print ('Hello World')
+
+x = abs (-7.25)
+print(x)
+
+
+x = math.sqrt(20)
+print (x)
+
+
+x = math.ceil(1.4)
+y = math.floor(1.4)
+print (x)
+print (y)
