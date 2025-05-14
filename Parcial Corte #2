@@ -1,0 +1,27 @@
+Ejercicios 
+
+A) Escribir una función que reciba 2 vectores y devuelva su producto escalar:
+
+def producto_escalar(vector1, vector2):
+    if len(vector1) != len(vector2):
+        raise ValueError("Los vectores deben tener la misma longitud")
+    
+    return sum(a * b for a, b in zip(vector1, vector2))
+
+vector1 = list(map(int, input("Ingrese los elementos del vector 1 separados por espacios: ").split()))
+vector2 = list(map(int, input("Ingrese los elementos del vector 2 separados por espacios: ").split()))
+
+resultado = producto_escalar(vector1, vector2)
+print("El producto escalar es:", resultado)
+
+B) Escribir una función que reciba un vector y devuelva su norma:
+
+import math
+
+vector = list(map(float, input("Ingrese los elementos del vector separados por espacios: ").split()))
+
+norma = math.sqrt(sum(x**2 for x in vector))
+
+print("La norma del vector es:", norma)
+
+C) Escribir una función 
