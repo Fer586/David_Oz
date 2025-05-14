@@ -24,4 +24,28 @@ norma = math.sqrt(sum(x**2 for x in vector))
 
 print("La norma del vector es:", norma)
 
-C) Escribir una función 
+C) Escribir una función que reciba 5 cartas de la baraja e informe si estas cartas forman o no un poker:
+
+def es_poker(cartas):
+    conteo_cartas = {}
+    for carta in cartas:
+        if carta in conteo_cartas:
+            conteo_cartas[carta] += 1
+        else:
+            conteo_cartas[carta] = 1
+    
+    for carta, conteo in conteo_cartas.items():
+        if conteo == 4:
+            return True
+    
+    return False
+
+cartas = []
+for i in range(5):
+    carta = input(f"Ingrese la carta {i+1} (como por ejemplo, 3, As, 4, ..., K): ")
+    cartas.append(carta)
+
+if es_poker(cartas):
+    print(f"Las cartas {cartas} forman un póker.")
+else:
+    print(f"Las cartas {cartas} no forman un póker.")
