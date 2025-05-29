@@ -10,3 +10,19 @@ try:
         print("El resultado de la división es:", resultado)
 except ValueError:
     print("Error: Debes introducir números válidos.")
+
+
+
+frase = input("Please introduce una frase: ")
+vocal = input("Please introduce una vocal: ").lower()
+
+if vocal not in 'aeiou':
+    print("Error: Debes introducir una vocal válida.")
+else:
+    frase_modificada = ""
+    for char in frase:
+        if char.lower() == vocal:
+            frase_modificada += vocal.upper()
+        else:
+            frase_modificada += char
+    print("La frase modificada es:", frase_modificada)
